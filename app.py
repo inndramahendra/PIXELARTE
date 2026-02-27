@@ -12,7 +12,7 @@ if st.button("Generate"):
     with st.spinner("Sedang menggambar..."):
         # Memanggil Nano Banana/Gemini untuk buat gambar
         response = client.models.generate_content(
-            model="nano-banana",
+            model="gemini-3-flash-image",
             config={'system_instruction': system_instructions},
             contents=prompt_user
         )
